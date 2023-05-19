@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zip Extractor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.11/themes/default/style.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/abstract-white.png">
+    
+</head>
+<body>
+    <nav>
+        <ul class="left">
+            <li id="logo"><img src="/abstract-white.png" alt="logo"></li>
+            <li>Pdf tools</li>
+            <li>Image tools</li>
+            <li>Video tools</li>
+            <li>Audio tools</li>
+        </ul>
+        <ul class="right">
+            <li>Video</li>
+            <button id="loginbtn">Log in</button>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h1><img src="/abstract.png" alt="logoicon"> Archive Extractor</h1>
+        <p>Archive Extractor is a small and easy online tool that can extract over 70 types of compressed files, such as 7z, zipx, rar, tar, exe, dmg and much more.</p>
+        <div id="mainbox">
+            <input id="fileInput" type="file" name="file" accept=".zip">
+            <button id="fileInputbtn">Choose File <div id="innerbtn">from your computer</div></button>
+            <!-- loading -->
+            <img id="loading" src="/loading.gif" alt="loading" style="display
+            :none;">
+            <div id="fileTree"></div>
+            <div><button id="goback"><img src="/iconleft1.png" alt="goback"> Select Another Archive</button>
+            </div>
+        </div>
+        
+        
+        <div class="infobox">
+            <p>Supported formats</p>
+            <p>This tool currutly supports only zip file</p>
+            <p>Suppors password-protected archives</p>
+            <p>can unpack multi-parts archives(zip.001,rar.part1,z01,etc)</p>
+        </div>
+    </div>
+    <footer>
+        <div id="rights-and-links">
+            <p id="rights">ZipExtarctor Computer Software Est 2012-2023</p>
+            <a href="#">Privacy</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div>
+            <p id="lang">English</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.11/jstree.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
